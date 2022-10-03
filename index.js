@@ -75,8 +75,6 @@ async function main() {
     console.log("shutting down..")
     running = false
     
-    await stopServer()
-    console.log('done with stop')
     client.close()
     process.exit(0)
     
