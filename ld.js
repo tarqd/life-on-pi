@@ -2,8 +2,7 @@ import * as ld from 'launchdarkly-node-server-sdk';
 
 
 export function getLDConfig() {
-//    const {LD_SDK_KEY} = process.env
-	const LD_SDK_KEY = 'sdk-4aa718c5-4e3c-4d4e-84f3-3488153d9b22'
+    const {LD_SDK_KEY} = process.env
     return [LD_SDK_KEY, {
         application: {
             id: 'gameoflife',
